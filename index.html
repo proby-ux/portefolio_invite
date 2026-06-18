@@ -3,454 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Mini Campagne d'Évangélisation 2026</title>
-
+<title>Mini Campagne d'Évangélisation 2025</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
-
-:root{
-    --gold:#f8b133;
-    --gold-light:#ffd166;
-    --orange:#ff7b00;
-    --dark:#120800;
-    --dark-2:#241000;
-    --white:#ffffff;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:#f5f6f8;
-    color:#222;
-    overflow-x:hidden;
-}
-
-/* HERO */
-
-.hero{
-    min-height:100vh;
-    background:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
-    linear-gradient(135deg,#3f1800,#7a2d00,#ff7b00);
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:40px;
-    position:relative;
-}
-
-.hero::before{
-    content:'';
-    position:absolute;
-    inset:0;
-    background:
-    radial-gradient(circle at 20% 20%, rgba(255,255,255,.08), transparent 40%),
-    radial-gradient(circle at 80% 60%, rgba(255,255,255,.05), transparent 40%);
-}
-
-.hero-content{
-    max-width:950px;
-    z-index:2;
-    animation:fadeUp 1.2s ease;
-}
-
-.badge{
-    display:inline-block;
-    padding:12px 25px;
-    border-radius:50px;
-    background:rgba(255,255,255,.12);
-    border:1px solid rgba(255,255,255,.15);
-    backdrop-filter:blur(10px);
-    margin-bottom:25px;
-    font-weight:600;
-}
-
-.hero h1{
-    font-family:'Cinzel',serif;
-    font-size:4.2rem;
-    line-height:1.1;
-    margin-bottom:20px;
-}
-
-.highlight{
-    color:var(--gold);
-}
-
-.hero p{
-    font-size:1.2rem;
-    max-width:800px;
-    margin:auto;
-    opacity:.95;
-}
-
-.info-row{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-top:35px;
-}
-
-.info{
-    background:rgba(255,255,255,.1);
-    padding:15px 25px;
-    border-radius:15px;
-    backdrop-filter:blur(10px);
-}
-
-.btn{
-    display:inline-block;
-    margin-top:40px;
-    text-decoration:none;
-    color:white;
-    padding:18px 40px;
-    border-radius:50px;
-    background:linear-gradient(135deg,var(--gold),var(--orange));
-    font-weight:700;
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:translateY(-4px);
-}
-
-/* CONTENT */
-
-.container{
-    max-width:1200px;
-    margin:auto;
-    padding:80px 20px;
-}
-
-.card{
-    background:white;
-    border-radius:25px;
-    padding:40px;
-    margin-bottom:35px;
-    box-shadow:0 10px 35px rgba(0,0,0,.08);
-}
-
-.section-title{
-    color:var(--orange);
-    margin-bottom:20px;
-    font-size:2rem;
-}
-
-.message{
-    font-size:1.1rem;
-    line-height:1.9;
-}
-
-.theme-box{
-    background:linear-gradient(135deg,#fff7e8,#fff1d2);
-    border-left:6px solid var(--gold);
-    padding:30px;
-    border-radius:20px;
-    text-align:center;
-    margin-top:30px;
-}
-
-.theme-box h2{
-    color:#b76d00;
-    font-family:'Cinzel',serif;
-}
-
-.speakers{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-
-.speaker{
-    background:linear-gradient(135deg,#fff,#fff6e8);
-    padding:25px;
-    border-radius:20px;
-    text-align:center;
-    border:1px solid #f5e2b5;
-}
-
-.speaker h3{
-    color:#b76d00;
-}
-
-.program{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:15px;
-}
-
-.day{
-    background:linear-gradient(135deg,#b75d00,#ff9800);
-    color:white;
-    border-radius:20px;
-    padding:20px;
-}
-
-.day strong{
-    display:block;
-    margin-bottom:10px;
-}
-
-.footer{
-    background:#120800;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
-}
-
-.footer h2{
-    color:var(--gold);
-}
-
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-@media(max-width:768px){
-
-.hero h1{
-    font-size:2.4rem;
-}
-
-.section-title{
-    font-size:1.5rem;
-}
-
-.card{
-    padding:25px;
-}
-
-}
-
+:root{--gold:#f8b133;--orange:#ff7b00;--dark:#120800;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;background:#f5f6f8;color:#222}
+.hero{min-height:100vh;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.75)),linear-gradient(135deg,#3f1800,#7a2d00,#ff7b00);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px}
+.hero-content{max-width:1000px}
+.logo-container img{width:130px;height:130px;object-fit:contain;border-radius:50%;padding:10px;background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.25)}
+.badge{display:inline-block;padding:12px 25px;border-radius:50px;background:rgba(255,255,255,.12);margin:25px 0}
+h1{font-family:Cinzel,serif;font-size:4rem;line-height:1.1}
+.highlight{color:var(--gold)}
+.info-row{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:35px}
+.info{background:rgba(255,255,255,.12);padding:15px 25px;border-radius:15px}
+.btn{display:inline-block;margin-top:40px;padding:18px 40px;border-radius:50px;background:linear-gradient(135deg,var(--gold),var(--orange));color:#fff;text-decoration:none;font-weight:700}
+.container{max-width:1200px;margin:auto;padding:80px 20px}
+.card{background:#fff;border-radius:25px;padding:40px;margin-bottom:35px;box-shadow:0 10px 35px rgba(0,0,0,.08)}
+.section-title{color:var(--orange);margin-bottom:25px;font-size:2rem}
+.theme-box{margin-top:30px;background:#fff7e8;border-left:6px solid var(--gold);padding:30px;border-radius:20px;text-align:center}
+.speakers{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
+.speaker{background:#fff7ec;border:1px solid #f0dfb7;border-radius:20px;padding:25px;text-align:center}
+.speaker-photo{width:120px;height:120px;margin:0 auto 15px;border-radius:50%;overflow:hidden;border:4px solid var(--gold)}
+.speaker-photo img{width:100%;height:100%;object-fit:cover}
+.program{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
+.day{background:linear-gradient(135deg,#b75d00,#ff9800);color:#fff;border-radius:20px;padding:20px}
+.footer{background:#120800;color:#fff;text-align:center;padding:60px 20px}
+.footer h2{color:var(--gold)}
 </style>
 </head>
 <body>
-
-<section class="hero">
-
-<div class="hero-content">
-
-<div class="badge">
-ALLIANCE TABERNACLE VISION DE L'AIGLE
-</div>
-
-<h1>
-MINI CAMPAGNE<br>
-D'ÉVANGÉLISATION
-</h1>
-
-<h1 class="highlight">
-RECONNAÎTRE VOTRE JOUR<br>
-ET VOTRE MESSAGE
-</h1>
-
-<p>
-Une rencontre spirituelle exceptionnelle placée sous la conduite du Saint-Esprit pour l'édification, l'adoration et la révélation de la Parole de Dieu.
-</p>
-
+<section class="hero"><div class="hero-content">
+<div class="logo-container"><img src="images/logo.png" alt="Logo"></div>
+<div class="badge">ALLIANCE TABERNACLE VISION DE L'AIGLE</div>
+<h1>MINI CAMPAGNE<br>D'ÉVANGÉLISATION</h1>
+<h1 class="highlight">RECONNAÎTRE VOTRE JOUR<br>ET SON MESSAGE</h1>
+<p>Une rencontre spirituelle exceptionnelle placée sous la conduite du Saint-Esprit.</p>
 <div class="info-row">
-
-<div class="info">
-📅 24 au 28 Juin 2026
+<div class="info">📅 24 au 28 Juin 2025</div>
+<div class="info">🕠 17H30 – 19H30</div>
+<div class="info">🎤 Pasteur John Lokanga</div>
 </div>
-
-<div class="info">
-🕠 17H30 – 19H30
-</div>
-
-<div class="info">
-🎤 Pasteur John Lokanga
-</div>
-
-</div>
-
-<a href="#invitation" class="btn">
-Lire l'invitation
-</a>
-
-</div>
-
-</section>
+<a href="#invitation" class="btn">Lire l'invitation</a>
+</div></section>
 
 <div class="container">
-
 <div class="card" id="invitation">
-
-<h2 class="section-title">
-Message d'Invitation
-</h2>
-
-<div class="message">
-
-<p>
-Bien-aimé(e),
-</p>
-
-<br>
-
-<p>
-C'est avec une immense joie que nous vous invitons à participer à notre Mini Campagne d'Évangélisation organisée par l'Alliance Tabernacle Vision de l'Aigle.
-</p>
-
-<br>
-
-<p>
-Pendant cinq jours, nous vivrons ensemble des moments intenses de louange, d'adoration, de prédication inspirée et de communion fraternelle.
-</p>
-
-<br>
-
-<p>
-Nous croyons que Dieu a préparé une bénédiction particulière pour chaque participant et que cette rencontre marquera profondément votre vie spirituelle.
-</p>
-
+<h2 class="section-title">Message d'Invitation</h2>
+<p>Bien-aimé(e), c'est avec une immense joie que nous vous invitons à participer à notre Mini Campagne d'Évangélisation organisée par l'Alliance Tabernacle Vision de l'Aigle.</p>
 <div class="theme-box">
-
-<h2>
-« RECONNAÎTRE VOTRE JOUR ET VOTRE MESSAGE »
-</h2>
-
-<p style="margin-top:15px;">
-Découvrir le temps de Dieu pour votre vie et comprendre le message qu'Il vous adresse aujourd'hui.
-</p>
-
+<h2>« RECONNAÎTRE VOTRE JOUR ET VOTRE MESSAGE »</h2>
+<p>Découvrir le temps de Dieu pour votre vie et comprendre le message qu'Il vous adresse aujourd'hui.</p>
 </div>
-
-</div>
-
 </div>
 
 <div class="card">
-
-<h2 class="section-title">
-Orateurs Invités
-</h2>
-
+<h2 class="section-title">Orateurs Invités</h2>
 <div class="speakers">
-
-<div class="speaker">
-<h3>Pasteur John Lokanga</h3>
-<p>Hôte Principal</p>
+<div class="speaker"><div class="speaker-photo"><img src="images/john.jpg"></div><h3>Pasteur John Lokanga</h3><p>Hôte Principal</p></div>
+<div class="speaker"><div class="speaker-photo"><img src="images/josue.png"></div><h3>Ministre Josue</h3><p>Orateur Invité</p></div>
+<div class="speaker"><div class="speaker-photo"><img src="images/ardy.jpeg"></div><h3>Ministre Ardy</h3><p>Orateur Invité</p></div>
+<div class="speaker"><div class="speaker-photo"><img src="images/glenn.jpeg"></div><h3>Ministre Glenn</h3><p>Orateur Invité</p></div>
+<div class="speaker"><div class="speaker-photo"><img src="images/joseph.jpeg"></div><h3>Ministre Joseph</h3><p>Orateur Invité</p></div>
 </div>
-
-<div class="speaker">
-<h3>Ministre Josue</h3>
-<p>Orateur Invité</p>
-</div>
-
-<div class="speaker">
-<h3>Ministre Ardy</h3>
-<p>Orateur Invité</p>
-</div>
-
-<div class="speaker">
-<h3>Ministre Glenn</h3>
-<p>Orateur Invité</p>
-</div>
-
-<div class="speaker">
-<h3>Ministre Joseph</h3>
-<p>Orateur Invité</p>
-</div>
-
-</div>
-
 </div>
 
 <div class="card">
-
-<h2 class="section-title">
-Programme
-</h2>
-
+<h2 class="section-title">Programme</h2>
 <div class="program">
-
-<div class="day">
-<strong>Mercredi 24 Juin</strong>
-Ouverture de la campagne
+<div class="day"><strong>24 Juin 2025</strong><br>17H30 à 19H30</div>
+<div class="day"><strong>25 Juin 2025</strong><br>17H30 à 19H30</div>
+<div class="day"><strong>26 Juin 2025</strong><br>17H30 à 19H30</div>
+<div class="day"><strong>27 Juin 2025</strong><br>17H30 à 19H30</div>
+<div class="day"><strong>28 Juin 2025</strong><br>09H30 à 12H30</div>
 </div>
-
-<div class="day">
-<strong>Jeudi 25 Juin</strong>
-Enseignement & Révélation
-</div>
-
-<div class="day">
-<strong>Vendredi 26 Juin</strong>
-Soirée de Foi
-</div>
-
-<div class="day">
-<strong>Samedi 27 Juin</strong>
-Louange & Adoration
-</div>
-
-<div class="day">
-<strong>Dimanche 28 Juin</strong>
-Clôture & Bénédictions
-</div>
-
-</div>
-
 </div>
 
 <div class="card">
-
-<h2 class="section-title">
-Informations Pratiques
-</h2>
-
-<p>
-📅 Du 24 au 28 Juin 2026
-</p>
-
-<p>
-🕠 Tous les jours de 17H30 à 19H30
-</p>
-
-<p>
-🎤 Hôte Principal : Pasteur John Lokanga
-</p>
-
-<p>
-🙏 Entrée libre – Venez avec votre famille et vos amis.
-</p>
-
+<h2 class="section-title">Informations Pratiques</h2>
+<p>📅 Du Mercredi 24 au Samedi 27 Juin 2026 — 17H30 à 19H30</p>
+<p>📅 Dimanche 28 Juin 2026 — 09H30 à 12H30</p>
+<p>📍 Belleville 3, au pavé chez le chef</p>
+<p>Venez nombreux</p>
 </div>
-
 </div>
 
 <footer class="footer">
-
-<h2>
-Alliance Tabernacle Vision de l'Aigle
-</h2>
-
-<p style="margin-top:15px;">
-Nous vous attendons avec joie pour ce temps de grâce et de bénédiction.
-</p>
-
+<h2>Alliance Tabernacle Vision de l'Aigle</h2>
+<p>📍 Belleville 3, au pavé chez le chef</p>
 </footer>
-
 </body>
 </html>
